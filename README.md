@@ -21,7 +21,7 @@ npm install node-red-contrib-primitive-status
 
 ### Help
 
-This node requires no configuration, just place it in-between nodes to examine <code>msg.payload</code>'s type. The primitive type is also sent as a string to the second output.
+This node requires no configuration, just place it between nodes to examine <code>msg.payload</code>'s type. The primitive type is also sent as a string to the second output.
 
 ### Bugs reports and feature requests
 
