@@ -1,9 +1,8 @@
 module.exports = function(RED) {
     function PrimitiveStatusNode(config) {
         RED.nodes.createNode(this,config);
-        
+        this.checkbox = config.checkbox;
         var node = this;
-        
         node.on('input', function(msg) {
             let msg2 = {};
             let status = "";
@@ -36,6 +35,10 @@ module.exports = function(RED) {
 
             if (typeof msg.payload === "symbol") {
                 status = "Symbol";
+            };
+
+            if (this.checkbox === true) {
+                msg.type = status;
             };
 
             if ("payload" in msg) {
