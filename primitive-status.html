@@ -1,0 +1,40 @@
+<script type="text/javascript">
+    RED.nodes.registerType('primitive-status',{
+        category: 'function',
+        color: '#EE941B',
+        defaults: {
+            name: {value:"",required:false}
+        },
+        inputs:1,
+        outputs:2,
+        align: "left",
+        icon: "search.png",
+        label: function() {
+            return this.name||"primitive-status";
+        },
+        inputLabels: "payload",
+        outputLabels: ["msg","type"]
+    });
+</script>
+
+<script type="text/html" data-template-name="primitive-status">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-usage">
+      Usage:
+      <p>
+        <ul>
+          <li>This node requires no configuration, just place it in-between nodes to examine <code>msg.payload</code>'s type.</li>
+          <li>The primitive type is also sent as a string to the second output.</li>
+        </ul>
+      </p>
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="primitive-status">
+    <p>A Node-RED node that displays the primitive type of <code>msg.payload</code> in the nodes status.</p>
+    <h3>Details</h3>
+    <p>This node requires no configuration, just place it in-between nodes to examine <code>msg.payload</code>'s type. The primitive type is also sent as a <b>string</b> to the second output.</p>
+</script>
