@@ -28,8 +28,9 @@ module.exports = function(RED) {
                 if (msg.payload !== null) {
                     if (!Array.isArray(msg.payload)) status = "Object";
                 if (Array.isArray(msg.payload)) status = "Array";
+                if (Buffer.isBuffer(msg.payload)) status = "Buffer";
                 } else {
-                    status = "Null";
+                    status = "Null"
                 };
             };
 
