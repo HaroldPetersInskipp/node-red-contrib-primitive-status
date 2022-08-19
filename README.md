@@ -17,7 +17,7 @@ npm install node-red-contrib-primitive-status
 
 ### Example
 
-[<img src="/examples/example.png">](https://github.com/HaroldPetersInskipp/node-red-contrib-convert-kitchen/blob/main/examples/primitive-status.json)
+[<img src="/examples/example.png">](https://github.com/HaroldPetersInskipp/node-red-contrib-primitive-status/blob/main/examples/primitive-status.json)
 
 ### Help
 
@@ -25,4 +25,4 @@ This node requires no configuration, just place it between nodes to examine <cod
 
 ### Bugs reports and feature requests
 
-Please report any issues or feature requests at <a href="https://github.com/HaroldPetersInskipp/node-red-contrib-convert-kitchen/issues">GitHub</a>.
+Please report any issues or feature requests at <a href="https://github.com/HaroldPetersInskipp/node-red-contrib-primitive-status/issues">GitHub</a>.
